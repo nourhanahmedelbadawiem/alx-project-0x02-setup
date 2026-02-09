@@ -1,7 +1,7 @@
 import Header from "@/components/layout/Header";
 import Button from "@/components/common/Button";
 
-export default function About() {
+const About = () => {
   return (
     <div className="min-h-screen bg-zinc-50">
       <Header />
@@ -69,4 +69,6 @@ export default function About() {
       </main>
     </div>
   );
-}
+};
+
+export default About;

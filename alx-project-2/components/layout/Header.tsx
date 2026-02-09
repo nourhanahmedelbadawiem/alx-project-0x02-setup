@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Header() {
+const Header = () => {
   return (
     <header className="w-full border-b border-zinc-200 bg-white px-6 py-4 shadow-sm">
       <div className="mx-auto flex max-w-5xl items-center justify-between">
@@ -30,5 +30,7 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default Header;
 

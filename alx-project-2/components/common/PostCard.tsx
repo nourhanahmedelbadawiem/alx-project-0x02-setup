@@ -1,6 +1,6 @@
 import { PostProps } from "@/interfaces";
 
-export default function PostCard({ title, content, userId }: PostProps) {
+const PostCard = ({ title, content, userId }: PostProps) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 border border-zinc-200 hover:shadow-lg transition-shadow">
       <div className="flex items-start justify-between mb-3">
@@ -14,4 +14,6 @@ export default function PostCard({ title, content, userId }: PostProps) {
       <p className="text-zinc-600 leading-relaxed">{content}</p>
     </div>
   );
-}
+};
+
+export default PostCard;

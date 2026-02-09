@@ -7,11 +7,11 @@ interface PostModalProps {
   onSubmit: (post: CardProps) => void;
 }
 
-export default function PostModal({
+const PostModal = ({
   isOpen,
   onClose,
   onSubmit,
-}: PostModalProps) {
+}: PostModalProps) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
@@ -114,4 +114,6 @@ export default function PostModal({
       </div>
     </div>
   );
-}
+};
+
+export default PostModal;

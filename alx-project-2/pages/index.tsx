@@ -11,7 +11,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function Home() {
+const Home = () => {
   return (
     <div
       className={`${geistSans.className} ${geistMono.className} flex min-h-screen flex-col bg-zinc-50 font-sans dark:bg-black`}
@@ -29,4 +29,6 @@ export default function Home() {
       </main>
     </div>
   );
-}
+};
+
+export default Home;

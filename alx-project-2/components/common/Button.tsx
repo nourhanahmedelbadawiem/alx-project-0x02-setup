@@ -1,13 +1,13 @@
 import { ButtonProps } from "@/interfaces";
 
-export default function Button({
+const Button = ({
   children,
   size = "medium",
   shape = "rounded-md",
   onClick,
   type = "button",
   className = "",
-}: ButtonProps) {
+}: ButtonProps) => {
   const sizeClasses = {
     small: "px-3 py-1.5 text-sm",
     medium: "px-4 py-2 text-base",
@@ -26,4 +26,6 @@ export default function Button({
       {children}
     </button>
   );
-}
+};
+
+export default Button;

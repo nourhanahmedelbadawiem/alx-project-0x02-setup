@@ -27,7 +27,7 @@ interface JsonPlaceholderUser {
   };
 }
 
-export default function Users() {
+const Users = () => {
   const [users, setUsers] = useState<UserProps[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -97,4 +97,6 @@ export default function Users() {
       </main>
     </div>
   );
-}
+};
+
+export default Users;

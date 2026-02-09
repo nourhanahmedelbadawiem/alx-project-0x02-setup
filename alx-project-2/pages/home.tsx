@@ -4,7 +4,7 @@ import Card from "@/components/common/Card";
 import PostModal from "@/components/common/PostModal";
 import { CardProps } from "@/interfaces";
 
-export default function Home() {
+const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [posts, setPosts] = useState<CardProps[]>([
     {
@@ -64,4 +64,6 @@ export default function Home() {
       />
     </div>
   );
-}
+};
+
+export default Home;

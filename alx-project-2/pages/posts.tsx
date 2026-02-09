@@ -10,7 +10,7 @@ interface JsonPlaceholderPost {
   body: string;
 }
 
-export default function Posts() {
+const Posts = () => {
   const [posts, setPosts] = useState<PostProps[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -80,4 +80,6 @@ export default function Posts() {
       </main>
     </div>
   );
-}
+};
+
+export default Posts;
