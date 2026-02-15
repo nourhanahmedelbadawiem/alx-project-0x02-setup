@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Pill from './Pill';
+import Pill from '@/components/Pill';
 
 const Card: React.FC = () => {
   return (
